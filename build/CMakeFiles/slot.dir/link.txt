@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/slot.dir/src/main.cpp.o -o slot 

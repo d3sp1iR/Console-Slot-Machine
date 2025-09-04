@@ -1,0 +1,3 @@
+/home/despy/Console-Slot-Machine/build/CMakeFiles/slot.dir
+/home/despy/Console-Slot-Machine/build/CMakeFiles/edit_cache.dir
+/home/despy/Console-Slot-Machine/build/CMakeFiles/rebuild_cache.dir
