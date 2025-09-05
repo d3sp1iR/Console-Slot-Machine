@@ -50,7 +50,7 @@ int main() {
 
     balance = balance;
 
-    cout << "Денежки кончились? тогда аувидерзейн" << endl;
+    cout << "Денежки кончились? тогда дерзейн" << endl;
 
     return 0;
 
