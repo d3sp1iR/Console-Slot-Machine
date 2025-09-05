@@ -16,7 +16,12 @@ int main() {
     char play;
     do {
         vector<string> result(3);
+        int bet;
+        cout << "Введи ставку: " << endl;
+        cin  >> bet;
         
+        
+
         for (int i = 0; i < 3; i++) {
             int index = rand() % symbols.size();
             result[i] = symbols[index];
@@ -27,12 +32,12 @@ int main() {
         cout << "| " << result[0] << " | " << result[1] << " | " << result[2] << " |" << endl;
 
         if (result[0] == result[1] && result[1] == result[2]) {
-            balance += 200;
+            balance += 2 * bet;
             cout << "Конгратилэйшнс, ю пробабли вин нафинг!!! :)" << endl;
             cout << "============ Баланс: " << balance << " =============" << endl;
         }
         else {
-            balance -= 100;
+            balance -= bet;
             cout << "Бэд трай, лузер. Нужен додеп" << endl;
             cout << "============ Баланс: " << balance << " =============" << endl;
         }
@@ -40,7 +45,8 @@ int main() {
         cout << "Ду ю вона трай додеп? (y/n)";
         cin >> play;
         
-    } while ((play == 'y' || play == 'Y') && balance >= 100);
+        
+    } while ((play == 'y' || play == 'Y') && balance > 0);
 
     balance = balance;
 
